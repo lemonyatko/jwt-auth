@@ -3,8 +3,6 @@ import { sign, verify } from "jsonwebtoken";
 import { UserDTO } from "../dtos/UserDTO";
 import { TokenModel } from "../models/Token";
 
-// const JWT_ACCESS_SECRET = process.env.JWT_ACCESS_SECRET || 'secret-access-bebra';
-// const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET || 'secret-refresh-bebra';
 type JwtPayload = {
     id: string
 } & UserDTO
